@@ -1,0 +1,180 @@
+﻿<Window x:Class="MwsFbaOutbound.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl>
+            <TabItem Header="GetFulfillmentPreview">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnGetFulfillmentPreview"
+                            Content="配送情報取得"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnGetFulfillmentPreview_Click"
+                            />
+                    <TextBlock x:Name="txtGetFulfillmentPreview"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="CreateFulfillmentOrder">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnCreateFulfillmentOrder"
+                            Content="出荷指示作成"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnCreateFulfillmentOrder_Click"
+                            />
+                    <TextBlock x:Name="txtCreateFulfillmentOrder"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="UpdateFulfillmentOrder">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnUpdateFulfillmentOrder"
+                            Content="配送情報更新"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnUpdateFulfillmentOrder_Click"
+                            />
+                    <TextBlock x:Name="txtUpdateFulfillmentOrder"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetFulfillmentOrder">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnGetFulfillmentOrder"
+                            Content="配送情報取得"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnGetFulfillmentOrder_Click"
+                            />
+                    <TextBlock x:Name="txtGetFulfillmentOrder"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="ListAllFulfillmentOrders">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnListAllFulfillmentOrders"
+                            Content="配送情報取得"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnListAllFulfillmentOrders_Click"
+                            />
+                    <TextBlock x:Name="txtListAllFulfillmentOrders"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="ListAllFulfillmentOrdersByNextToken">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnListAllFulfillmentOrdersByNextToken"
+                            Content="次の配送情報取得"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnListAllFulfillmentOrdersByNextToken_Click"
+                            />
+                    <TextBlock x:Name="txtListAllFulfillmentOrdersByNextToken"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetPackageTrackingDetails">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnGetPackageTrackingDetails"
+                            Content="注文情報取得"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnGetPackageTrackingDetails_Click"
+                            />
+                    <TextBlock x:Name="txtGetPackageTrackingDetails"
+                               Width="250"
+                               Height="100"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="CancelFulfillmentOrder">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnCancelFulfillmentOrder"
+                            Content="注文キャンセル"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnCancelFulfillmentOrder_Click"
+                            />
+                    <TextBlock x:Name="txtCancelFulfillmentOrder"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetServiceStatus">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnGetServiceStatus"
+                            Content="ステータス情報取得"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnGetServiceStatus_Click"
+                            />
+                    <TextBlock x:Name="txtGetServiceStatus"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
